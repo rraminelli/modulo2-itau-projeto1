@@ -2,7 +2,7 @@ package br.com.letscode.turmaitau.colecoes;
 
 import java.util.Objects;
 
-public class Pessoa implements Comparable {
+public class Pessoa implements Comparable<Pessoa> {
 
     private String nome;
 
@@ -24,8 +24,8 @@ public class Pessoa implements Comparable {
     }
 
     @Override
-    public int compareTo(Object obj) {
-        Pessoa pessoaObj = (Pessoa) obj;
+    public int compareTo(Pessoa pessoaObj) {
+        //Pessoa pessoaObj = (Pessoa) obj;
         if (pessoaObj.getNome().length() > this.nome.length()) {
             return 1;
         } else if (pessoaObj.getNome().length() < this.nome.length()) {
