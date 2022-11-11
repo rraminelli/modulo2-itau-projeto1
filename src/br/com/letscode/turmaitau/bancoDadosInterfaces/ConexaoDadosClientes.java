@@ -1,6 +1,6 @@
 package br.com.letscode.turmaitau.bancoDadosInterfaces;
 
-import br.com.letscode.turmaitau.genericsExercicioInvestimento.entidades.cliente.Cliente;
+import br.com.letscode.turmaitau.genericsExercicioInvestimento.cliente.Cliente;
 
 public interface ConexaoDadosClientes {
 
